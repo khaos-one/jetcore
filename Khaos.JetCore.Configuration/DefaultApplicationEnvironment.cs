@@ -11,7 +11,6 @@ namespace Khaos.JetCore.Configuration
 
 		private readonly string _environmentName;
 		private readonly bool _isDevelopment;
-		private readonly bool _isDemo;
 		private readonly bool _isStaging;
 		private readonly bool _isProduction;
 
@@ -44,7 +43,7 @@ namespace Khaos.JetCore.Configuration
 
 			_isStaging = _environmentName == StagingEnvironmentName;
 			_isProduction = _environmentName == ProductionEnvironmentName;
-			_isDevelopment = !_isDemo && !_isStaging && !_isProduction;
+			_isDevelopment = !_isStaging && !_isProduction;
 		}
 	}
 }
