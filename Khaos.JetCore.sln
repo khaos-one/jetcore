@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.Core.Configuration.Ya
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.Core.Contracts.Web", "src\Khaos.Core.Contracts.Web\Khaos.Core.Contracts.Web.csproj", "{995548C0-41EA-4F0E-805D-70134E67A844}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khaos.Core.ServiceHosting", "src\Khaos.Core.ServiceHosting\Khaos.Core.ServiceHosting.csproj", "{AD19FC6F-24DD-4E40-A702-869D25C5E871}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,17 @@ Global
 		{995548C0-41EA-4F0E-805D-70134E67A844}.Release|x64.Build.0 = Release|Any CPU
 		{995548C0-41EA-4F0E-805D-70134E67A844}.Release|x86.ActiveCfg = Release|Any CPU
 		{995548C0-41EA-4F0E-805D-70134E67A844}.Release|x86.Build.0 = Release|Any CPU
+		{AD19FC6F-24DD-4E40-A702-869D25C5E871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD19FC6F-24DD-4E40-A702-869D25C5E871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD19FC6F-24DD-4E40-A702-869D25C5E871}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AD19FC6F-24DD-4E40-A702-869D25C5E871}.Debug|x64.Build.0 = Debug|Any CPU
+		{AD19FC6F-24DD-4E40-A702-869D25C5E871}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AD19FC6F-24DD-4E40-A702-869D25C5E871}.Debug|x86.Build.0 = Debug|Any CPU
+		{AD19FC6F-24DD-4E40-A702-869D25C5E871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD19FC6F-24DD-4E40-A702-869D25C5E871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD19FC6F-24DD-4E40-A702-869D25C5E871}.Release|x64.ActiveCfg = Release|Any CPU
+		{AD19FC6F-24DD-4E40-A702-869D25C5E871}.Release|x64.Build.0 = Release|Any CPU
+		{AD19FC6F-24DD-4E40-A702-869D25C5E871}.Release|x86.ActiveCfg = Release|Any CPU
+		{AD19FC6F-24DD-4E40-A702-869D25C5E871}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
