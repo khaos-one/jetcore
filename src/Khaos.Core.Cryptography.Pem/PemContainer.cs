@@ -10,7 +10,8 @@ namespace Khaos.Core.Cryptography.Pem
     public class PemContainer : IPemContainer
     {
         private static readonly Regex PemRegex =
-            new Regex(@"-----BEGIN (.*?)-----(.*?)-----END (.*?)-----", RegexOptions.Compiled | RegexOptions.Singleline);
+            new Regex(@"-----BEGIN (.*?)-----(.*?)-----END (.*?)-----", 
+                RegexOptions.Compiled | RegexOptions.Singleline);
 
         private string _stringRepresentation;
         
@@ -79,12 +80,14 @@ namespace Khaos.Core.Cryptography.Pem
 
             if (results.Count > 1)
             {
-                throw new PemFormatException(content, "Provided PEM content contains more than one container.", nameof(content));
+                throw new PemFormatException(content, 
+                    "Provided PEM content contains more than one container.", nameof(content));
             }
             
             if (results.Count == 0)
             {
-                throw new PemFormatException(content, "Provided PEM content contains no containers.", nameof(content));
+                throw new PemFormatException(content, 
+                    "Provided PEM content contains no containers.", nameof(content));
             }
 
             return results.Single();
@@ -103,7 +106,8 @@ namespace Khaos.Core.Cryptography.Pem
 
                 if (header != footer)
                 {
-                    throw new PemFormatException(content, "PEM header does not match corresponding footer.");
+                    throw new PemFormatException(content, 
+                        "PEM header does not match corresponding footer.");
                 }
 
                 try
@@ -112,7 +116,8 @@ namespace Khaos.Core.Cryptography.Pem
                 }
                 catch (FormatException e)
                 {
-                    throw new PemFormatException(content, "Failed to deserialize PEM content.", e);
+                    throw new PemFormatException(content, 
+                        "Failed to deserialize PEM content.", e);
                 }
             }
 
